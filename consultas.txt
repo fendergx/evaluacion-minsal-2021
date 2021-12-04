@@ -1,0 +1,15 @@
+para medicos
+$recetas = DB::table('recetas')->where('id_medico', '=', 1)->get();
+//orm
+$recetas= Receta::where('id_medico', '=', 1)->get();
+
+para establecimientos
+$recetas = DB::table('recetas')->where('id_est', '=', 1)->get();
+
+//orm
+$recetas= Receta::where('id_est', '=', 1)->get();
+
+
+pruebas con ORM
+$medicos = DB::table('medicos')->where('id_est', '=', 1)->get();
+$medicos= Medico::where('id_est', '=', 1)->get();
